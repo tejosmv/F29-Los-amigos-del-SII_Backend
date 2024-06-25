@@ -1,15 +1,17 @@
 // init-mongo.js
 db.createUser({
-    user: "4dm1n_f29",
-    pwd: "f29_db_p4$$Admin.",
+    user: "t3l3m4t1k",
+    pwd: "f29_db_p4ssAdmin.",
     roles: [
       {
-        role: "userAdminAnyDatabase",
-        db: "admin"
+        role: "dbAdmin",
+        db: "f29_db"
       }
     ]
   });
   
+
+
 // crear schema de users pero accede a la base de datos f29_db
 /*
 db = db.getSiblingDB("f29_db");

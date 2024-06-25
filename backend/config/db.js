@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 const DB_URI = process.env.DB_URI;
-console.log("DB_URI:",DB_URI);
+
 const connectDB = async () => {
     try {
         await mongoose.connect(DB_URI, {
@@ -15,5 +15,6 @@ const connectDB = async () => {
         process.exit(1);
     }
 };
+
 
 module.exports = connectDB;
